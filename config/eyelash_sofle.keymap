@@ -1,5 +1,5 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 600, 1200
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10   // 10, 25
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -21,10 +21,10 @@
 &mmv {
     time-to-max-speed-ms = <500>;
     acceleration-exponent = <1>;
-    trigger-period-ms = <16>;
+    trigger-period-ms = <4>; // 16
 };
 
-&soft_off { hold-time-ms = <2000>; };
+&soft_off { hold-time-ms = <3000>; };
 
 / {
     scroll_encoder: scroll_encoder {
@@ -73,7 +73,7 @@
 &kp TAB    &kp Q     &kp W     &kp E   &kp R      &kp T      &kp DOWN_ARROW   &kp Y      &kp U     &kp I      &kp O    &kp P     &kp BSLH
 &kp LSHFT  &kp A     &kp S     &kp D   &kp F      &kp G      &kp LEFT_ARROW   &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
 &kp LCTRL  &kp Z     &kp X     &kp C   &kp V      &kp B      &kp RIGHT_ARROW  &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&kp RSHFT  &kp LALT  &kp LGUI  &mo 1   &kp SPACE  &kp RET    &kp ENTER        &kp SPACE  &kp BSPC  &kp SPACE  &mo 1    &none
+&kp RSHFT  &kp LALT  &kp LGUI  &mo 1   &kp SPACE  &kp RET    &kp ENTER        &kp RET  &kp BSPC  &kp SPACE  &mo 1    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -82,10 +82,10 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &kp ESC    &kp ESC           &mmv MOVE_UP     &kp ESC    &kp ESC  &kp LBKT      &kp RBKT  &kp EQUAL  &trans
-&trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp T      &msc SCRL_UP      &mmv MOVE_DOWN   &kp PG_UP  &kp Y    &kp ESC       &kp ESC   &kp ESC    &kp ESC
-&trans      &kp LEFT        &kp UP          &kp DOWN         &kp RIGHT  &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp PG_DN  &kp H    &kp SPACE     &kp BSPC  &kp ESC    &kp ESC
-&trans      &trans          &kp ESC         &kp ESC          &kp B      &kp ESC           &mmv MOVE_RIGHT  &kp ESC    &kp N    &kp QUESTION  &kp ESC   &kp ESC    &trans
+&kp GRAVE   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans    &trans           &mmv MOVE_UP     &trans    &trans  &kp LBKT      &kp RBKT  &kp EQUAL  &trans
+&trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp T      &msc SCRL_UP      &mmv MOVE_DOWN   &kp PG_UP  &kp Y    &trans       &trans   &trans    &trans
+&trans      &kp LEFT        &kp UP          &kp DOWN         &kp RIGHT  &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp PG_DN  &kp H    &kp SPACE     &kp BSPC  &trans    &trans
+&trans      &trans          &trans         &trans          &kp B      &trans           &mmv MOVE_RIGHT  &trans    &kp N    &kp QUESTION  &trans   &trans    &trans
 &kp C_MUTE  &mo 2           &trans          &trans           &trans     &trans            &mkp LCLK        &trans     &trans   &trans        &trans    &trans
             >;
 
@@ -95,10 +95,10 @@
 
         layer_2 {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &none
-&kp CAPS    &kp B         &kp L         &kp U         &kp E         &kp T           &mmv MOVE_DOWN   &none    &none    &kp ESC  &kp ESC  &kp ESC  &kp ESC
-&none       &kp ESC       &kp ESC       &kp ESC       &none         &none           &mmv MOVE_LEFT   &none    &none    &none    &none    &kp ESC  &kp ESC
-&none       &none         &none         &kp ESC       &none         &none           &mmv MOVE_RIGHT  &none    &none    &kp ESC  &kp ESC  &kp ESC  &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &none  &none  &none  &none  &none  &none
+&kp CAPS    &kp B         &kp L         &kp U         &kp E         &kp T           &mmv MOVE_DOWN   &none    &none    &none  &none  &none  &none
+&none       &none       &none       &none       &none         &none           &mmv MOVE_LEFT   &none    &none    &none    &none    &none  &none
+&none       &none         &none         &none       &none         &none           &mmv MOVE_RIGHT  &none    &none    &none  &none  &none  &none
 &none       &none         &none         &none         &none         &none           &mkp LCLK        &none    &none    &none    &none    &none
             >;
 
