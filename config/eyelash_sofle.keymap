@@ -83,9 +83,9 @@
         layer_1 {
             bindings = <
 &kp GRAVE   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans     &trans            &mmv MOVE_UP     &trans     &trans  &trans        &kp LBKT  &kp RBKT  &kp EQUAL
-&trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp T      &msc SCRL_UP      &mmv MOVE_DOWN   &kp PG_UP  &kp Y   &trans        &trans    &trans    &trans
-&kp BSPC    &kp LEFT        &kp UP          &kp DOWN         &kp RIGHT  &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp PG_DN  &kp H   &kp SPACE     &kp BSPC  &trans    &trans
-&trans      &trans          &trans          &trans           &kp B      &trans            &mmv MOVE_RIGHT  &trans     &kp N   &kp QUESTION  &trans    &trans    &trans
+&trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp T      &trans            &mmv MOVE_DOWN   &kp PG_UP  &kp Y   &trans        &trans    &trans    &trans
+&kp BSPC    &kp LEFT        &kp UP          &kp DOWN         &kp RIGHT  &msc SCRL_UP      &mmv MOVE_LEFT   &kp PG_DN  &kp H   &kp SPACE     &kp BSPC  &trans    &trans
+&trans      &trans          &trans          &trans           &kp B      &msc SCRL_DOWN    &mmv MOVE_RIGHT  &trans     &kp N   &kp QUESTION  &trans    &trans    &trans
 &kp C_MUTE  &mo 2           &trans          &trans           &trans     &trans            &mkp LCLK        &trans     &trans  &trans        &trans    &trans
             >;
 
@@ -99,7 +99,7 @@
 &kp CAPS    &kp B         &kp L         &kp U         &kp E         &kp T           &mmv MOVE_DOWN   &none  &none  &none  &none  &none  &none
 &none       &none         &none         &none         &none         &none           &mmv MOVE_LEFT   &none  &none  &none  &none  &none  &none
 &none       &none         &none         &none         &none         &none           &mmv MOVE_RIGHT  &none  &none  &none  &none  &none  &none
-&none       &none         &none         &none         &none         &none           &mkp LCLK        &none  &none  &none  &none  &none
+&none       &none         &none         &none         &none         &soft_off       &mkp LCLK        &none  &none  &none  &none  &none
             >;
 
             display-name = "layer2";
