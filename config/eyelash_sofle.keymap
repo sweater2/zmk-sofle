@@ -35,6 +35,33 @@
         tap-ms = <100>;
     };
 
+    td_j_h: td_j_h {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TD_J_H";
+        #binding-cells = <0>;
+        bindings = <&kp J>, <&kp H>;
+
+        tapping-term-ms = <100>;
+    };
+
+    td_u_y: td_u_y {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TD_U_Y";
+        #binding-cells = <0>;
+        bindings = <&kp U>, <&kp Y>;
+
+        tapping-term-ms = <100>;
+    };
+
+    td_m_n: td_m_n {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TD_M_N";
+        #binding-cells = <0>;
+        bindings = <&kp M>, <&kp N>;
+
+        tapping-term-ms = <100>;
+    };
+
     behaviors {
     };
 
@@ -115,11 +142,11 @@
 
         layer_3_rhs {
             bindings = <
-&trans  &trans  &trans        &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp P   &kp O         &kp I      &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp L         &kp K      &kp J   &kp H     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp QUESTION  &kp COMMA  &kp M   &kp N     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans        &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp P   &kp O         &kp I      &td_u_y  &kp Y     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp BSPC  &trans  &kp L         &kp K      &td_j_h  &kp H     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &kp QUESTION  &kp COMMA  &td_m_n  &kp N     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans        &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
