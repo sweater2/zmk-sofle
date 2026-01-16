@@ -158,11 +158,11 @@
 
         layer_3_rhs {
             bindings = <
-&trans    &kp N6  &kp N7        &kp N8     &kp N9   &kp N0    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &kp P   &kp O         &kp I      &td_u_y  &kp Y     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp BSPC  &trans  &kp L         &kp K      &td_j_h  &kp H     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &kp LS(FSLH)  &kp COMMA  &td_m_n  &kp N     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &mo 2   &trans        &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp N6  &kp N7        &kp N8     &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp P   &kp O         &kp I      &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp BSPC  &trans  &kp L         &kp K      &kp H   &kp H     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &kp LS(FSLH)  &kp COMMA  &kp M   &kp N     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &mo 2   &trans        &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
