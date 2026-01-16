@@ -41,42 +41,42 @@
         td_u_y: tap_dance_u_y {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp U>, <&kp Y>;
         };
 
         td_j_h: tap_dance_j_h {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp J>, <&kp H>;
         };
 
         td_m_n: tap_dance_m_n {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp M>, <&kp N>;
         };
 
         td_r_t: tap_dance_r_t {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp R>, <&kp T>;
         };
 
         td_f_g: tap_dance_f_g {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp F>, <&kp G>;
         };
 
         td_v_b: tap_dance_v_b {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp V>, <&kp B>;
         };
     };
@@ -96,40 +96,46 @@
             require-prior-idle-ms = <1000>;
         };
 
-        kp_t_ {
-            bindings = <&kp T>;
-            key-positions = <27 17>;
-            layers = <5>;
-        };
-
-        kp_g_ {
-            bindings = <&kp G>;
-            key-positions = <27 30>;
-            layers = <5>;
-        };
-
-        kp_b_ {
-            bindings = <&kp B>;
-            key-positions = <27 43>;
-            layers = <5>;
-        };
-
         kp_y_ {
             bindings = <&kp Y>;
             key-positions = <27 17>;
             layers = <3>;
+            timeout-ms = <300>;
         };
 
         kp_h_ {
             bindings = <&kp H>;
             key-positions = <27 30>;
             layers = <3>;
+            timeout-ms = <300>;
         };
 
         kp_n_ {
             bindings = <&kp N>;
             key-positions = <27 43>;
             layers = <3>;
+            timeout-ms = <300>;
+        };
+
+        kp_t_ {
+            bindings = <&kp T>;
+            key-positions = <27 17>;
+            layers = <5>;
+            timeout-ms = <300>;
+        };
+
+        kp_g_ {
+            bindings = <&kp G>;
+            key-positions = <27 30>;
+            layers = <5>;
+            timeout-ms = <300>;
+        };
+
+        kp_b_ {
+            bindings = <&kp B>;
+            key-positions = <27 43>;
+            layers = <5>;
+            timeout-ms = <300>;
         };
     };
 
