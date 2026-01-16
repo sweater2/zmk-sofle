@@ -213,7 +213,7 @@ layers:
   - P
   - O
   - I
-  - '&td_u_y'
+  - U
   - Y
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -226,7 +226,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - L
   - K
-  - '&td_j_h'
+  - H
   - H
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -239,7 +239,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Sft+/, s: 'Sft+?'}
   - {t: ',', s: <}
-  - '&td_m_n'
+  - M
   - N
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
