@@ -50,7 +50,7 @@
             bindings = <&tog 5>;
             key-positions = <13 0 1>;
             timeout-ms = <500>;
-            require-prior-idle-ms = <2000>;
+            require-prior-idle-ms = <1000>;
         };
     };
 
