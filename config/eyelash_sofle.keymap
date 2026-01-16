@@ -118,9 +118,9 @@
         layer0 {
             bindings = <
 &kp ESC    &kp N1    &kp N2    &kp N3  &kp N4       &kp N5     &kp UP_ARROW     &kp N6   &kp N7    &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB    &kp Q     &kp W     &kp E   &td_r_t      &kp T      &kp DOWN_ARROW   &kp Y    &kp U     &kp I      &kp O    &kp P     &kp BSLH
-&kp LSHFT  &kp A     &kp S     &kp D   &td_f_g      &kp G      &kp LEFT_ARROW   &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LCTRL  &kp Z     &kp X     &kp C   &td_v_b      &kp B      &kp RIGHT_ARROW  &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&kp TAB    &kp Q     &kp W     &kp E   &mt T R      &kp T      &kp DOWN_ARROW   &kp Y    &kp U     &kp I      &kp O    &kp P     &kp BSLH
+&kp LSHFT  &kp A     &kp S     &kp D   &mt G F      &kp G      &kp LEFT_ARROW   &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LCTRL  &kp Z     &kp X     &kp C   &mt B V      &kp B      &kp RIGHT_ARROW  &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
 &kp RSHFT  &kp LALT  &kp LGUI  &mo 1   &lt 1 SPACE  &kp RET    &kp ENTER        &kp RET  &kp BSPC  &kp SPACE  &mo 1    &none
             >;
 
@@ -156,11 +156,11 @@
 
         layer_3_rhs {
             bindings = <
-&trans    &trans  &trans        &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &kp P   &kp O         &kp I      &td_u_y  &kp Y     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp BSPC  &trans  &kp L         &kp K      &td_j_h  &kp H     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &kp QUESTION  &kp COMMA  &td_m_n  &kp N     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &trans        &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp N6  &kp N7        &kp N8     &kp N9   &kp N0    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp P   &kp O         &kp I      &mt Y U  &kp Y     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp BSPC  &trans  &kp L         &kp K      &mt H J  &kp H     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &kp LS(FSLH)  &kp COMMA  &mt N M  &kp N     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &mo 2   &trans        &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -176,11 +176,11 @@
 
         layer_5_toggle {
             bindings = <
-&trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans  &mo 3   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &mo 3   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
