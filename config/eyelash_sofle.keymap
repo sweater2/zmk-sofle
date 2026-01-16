@@ -26,9 +26,7 @@
 
 &soft_off { hold-time-ms = <500>; };
 
-&mt {
-    flavor = "balanced";
-};
+&mt { flavor = "balanced"; };
 
 / {
     scroll_encoder: scroll_encoder {
@@ -97,6 +95,42 @@
             timeout-ms = <500>;
             require-prior-idle-ms = <1000>;
         };
+
+        kp_t_ {
+            bindings = <&kp T>;
+            key-positions = <27 17>;
+            layers = <5>;
+        };
+
+        kp_g_ {
+            bindings = <&kp G>;
+            key-positions = <27 30>;
+            layers = <5>;
+        };
+
+        kp_b_ {
+            bindings = <&kp B>;
+            key-positions = <27 43>;
+            layers = <5>;
+        };
+
+        kp_y_ {
+            bindings = <&kp Y>;
+            key-positions = <27 17>;
+            layers = <3>;
+        };
+
+        kp_h_ {
+            bindings = <&kp H>;
+            key-positions = <27 30>;
+            layers = <3>;
+        };
+
+        kp_n_ {
+            bindings = <&kp N>;
+            key-positions = <27 43>;
+            layers = <3>;
+        };
     };
 
     macros {
@@ -122,9 +156,9 @@
         layer0 {
             bindings = <
 &kp ESC    &kp N1    &kp N2    &kp N3  &kp N4       &kp N5     &kp UP_ARROW     &kp N6   &kp N7    &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB    &kp Q     &kp W     &kp E   &mt T R      &kp T      &kp DOWN_ARROW   &kp Y    &kp U     &kp I      &kp O    &kp P     &kp BSLH
-&kp LSHFT  &kp A     &kp S     &kp D   &mt G F      &kp G      &kp LEFT_ARROW   &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LCTRL  &kp Z     &kp X     &kp C   &mt B V      &kp B      &kp RIGHT_ARROW  &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&kp TAB    &kp Q     &kp W     &kp E   &mt T R      &kp T      &kp DOWN_ARROW   &kp Y    &mt Y U   &kp I      &kp O    &kp P     &kp BSLH
+&kp LSHFT  &kp A     &kp S     &kp D   &mt G F      &kp G      &kp LEFT_ARROW   &kp H    &mt H J   &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LCTRL  &kp Z     &kp X     &kp C   &mt B V      &kp B      &kp RIGHT_ARROW  &kp N    &mt N M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
 &kp RSHFT  &kp LALT  &kp LGUI  &mo 1   &lt 1 SPACE  &kp RET    &kp ENTER        &kp RET  &kp BSPC  &kp SPACE  &mo 1    &none
             >;
 
@@ -161,9 +195,9 @@
         layer_3_rhs {
             bindings = <
 &trans    &kp N6  &kp N7        &kp N8     &kp N9   &kp N0    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &kp P   &kp O         &kp I      &mt Y U  &kp Y     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp BSPC  &trans  &kp L         &kp K      &mt H J  &kp H     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &kp LS(FSLH)  &kp COMMA  &mt N M  &kp N     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp P   &kp O         &kp I      &td_u_y  &kp Y     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp BSPC  &trans  &kp L         &kp K      &td_j_h  &kp H     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &kp LS(FSLH)  &kp COMMA  &td_m_n  &kp N     &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans    &mo 2   &trans        &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -180,11 +214,11 @@
 
         layer_5_toggle {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &mo 3   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &td_r_t  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &td_f_g  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &td_v_b  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &mo 3   &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
