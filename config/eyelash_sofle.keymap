@@ -39,29 +39,43 @@
         td_u_y: tap_dance_u_y {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&kp U>, <&kp Y>;
         };
 
         td_j_h: tap_dance_j_h {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&kp J>, <&kp H>;
         };
 
         td_m_n: tap_dance_m_n {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&kp M>, <&kp N>;
         };
 
-        td_r_t: tap_dance_t_t {
+        td_r_t: tap_dance_r_t {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&kp R>, <&kp T>;
+        };
+
+        td_f_g: tap_dance_f_g {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp F>, <&kp G>;
+        };
+
+        td_v_b: tap_dance_v_b {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp V>, <&kp B>;
         };
     };
 
@@ -105,8 +119,8 @@
             bindings = <
 &kp ESC    &kp N1    &kp N2    &kp N3  &kp N4       &kp N5     &kp UP_ARROW     &kp N6   &kp N7    &kp N8     &kp N9   &kp N0    &kp MINUS
 &kp TAB    &kp Q     &kp W     &kp E   &td_r_t      &kp T      &kp DOWN_ARROW   &kp Y    &kp U     &kp I      &kp O    &kp P     &kp BSLH
-&kp LSHFT  &kp A     &kp S     &kp D   &kp F        &kp G      &kp LEFT_ARROW   &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LCTRL  &kp Z     &kp X     &kp C   &kp V        &kp B      &kp RIGHT_ARROW  &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&kp LSHFT  &kp A     &kp S     &kp D   &td_f_g      &kp G      &kp LEFT_ARROW   &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LCTRL  &kp Z     &kp X     &kp C   &td_v_b      &kp B      &kp RIGHT_ARROW  &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
 &kp RSHFT  &kp LALT  &kp LGUI  &mo 1   &lt 1 SPACE  &kp RET    &kp ENTER        &kp RET  &kp BSPC  &kp SPACE  &mo 1    &none
             >;
 
@@ -164,7 +178,7 @@
             bindings = <
 &trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &lt 4 A  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &mo 3   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
