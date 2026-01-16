@@ -35,34 +35,30 @@
         tap-ms = <100>;
     };
 
-    td_j_h: td_j_h {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_J_H";
-        #binding-cells = <0>;
-        bindings = <&kp J>, <&kp H>;
-
-        tapping-term-ms = <100>;
-    };
-
-    td_u_y: td_u_y {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_U_Y";
-        #binding-cells = <0>;
-        bindings = <&kp U>, <&kp Y>;
-
-        tapping-term-ms = <100>;
-    };
-
-    td_m_n: td_m_n {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_M_N";
-        #binding-cells = <0>;
-        bindings = <&kp M>, <&kp N>;
-
-        tapping-term-ms = <100>;
-    };
-
     behaviors {
+        td_j_h: td_j_h {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&kp H>;
+    
+            tapping-term-ms = <100>;
+        };
+    
+        td_u_y: td_u_y {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp Y>;
+    
+            tapping-term-ms = <100>;
+        };
+    
+        td_m_n: td_m_n {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp M>, <&kp N>;
+    
+            tapping-term-ms = <100>;
+        };
     };
 
     combos {
