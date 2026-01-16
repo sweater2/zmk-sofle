@@ -22,7 +22,7 @@ layers:
   - T
   - $$mdi:arrow-down-bold$$
   - Y
-  - U
+  - {t: U, h: Y}
   - I
   - O
   - P
@@ -35,7 +35,7 @@ layers:
   - G
   - $$mdi:arrow-left-bold$$
   - H
-  - J
+  - {t: J, h: H}
   - K
   - L
   - {t: ;, s: ':'}
@@ -48,7 +48,7 @@ layers:
   - B
   - $$mdi:arrow-right-bold$$
   - N
-  - M
+  - {t: M, h: N}
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
@@ -213,7 +213,7 @@ layers:
   - P
   - O
   - I
-  - {t: U, h: Y}
+  - '&td_u_y'
   - Y
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -226,7 +226,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - L
   - K
-  - {t: J, h: H}
+  - '&td_j_h'
   - H
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -239,7 +239,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Sft+/, s: 'Sft+?'}
   - {t: ',', s: <}
-  - {t: M, h: N}
+  - '&td_m_n'
   - N
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -343,6 +343,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&td_r_t'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -355,6 +356,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&td_f_g'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -367,9 +369,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&td_v_b'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -395,3 +395,21 @@ combos:
   k: '&soft_off'
 - p: [13, 0, 1]
   k: {t: 5_toggle, h: toggle}
+- p: [27, 17]
+  k: T
+  l: [5_toggle]
+- p: [27, 30]
+  k: G
+  l: [5_toggle]
+- p: [27, 43]
+  k: B
+  l: [5_toggle]
+- p: [27, 17]
+  k: Y
+  l: [3_rhs]
+- p: [27, 30]
+  k: H
+  l: [3_rhs]
+- p: [27, 43]
+  k: N
+  l: [3_rhs]
