@@ -396,15 +396,6 @@ combos:
 - p: [13, 0, 1]
   k: {t: 5_toggle, h: toggle}
 - p: [27, 17]
-  k: T
-  l: [5_toggle]
-- p: [27, 30]
-  k: G
-  l: [5_toggle]
-- p: [27, 43]
-  k: B
-  l: [5_toggle]
-- p: [27, 17]
   k: Y
   l: [3_rhs]
 - p: [27, 30]
@@ -413,3 +404,12 @@ combos:
 - p: [27, 43]
   k: N
   l: [3_rhs]
+- p: [27, 17]
+  k: T
+  l: [5_toggle]
+- p: [27, 30]
+  k: G
+  l: [5_toggle]
+- p: [27, 43]
+  k: B
+  l: [5_toggle]
