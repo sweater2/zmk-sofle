@@ -18,7 +18,7 @@ layers:
   - Q
   - W
   - E
-  - '&td_r_t'
+  - {t: R, h: T}
   - T
   - $$mdi:arrow-down-bold$$
   - Y
@@ -31,7 +31,7 @@ layers:
   - A
   - S
   - D
-  - '&td_f_g'
+  - {t: F, h: G}
   - G
   - $$mdi:arrow-left-bold$$
   - H
@@ -44,7 +44,7 @@ layers:
   - Z
   - X
   - C
-  - '&td_v_b'
+  - {t: V, h: B}
   - B
   - $$mdi:arrow-right-bold$$
   - N
@@ -197,11 +197,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   3_rhs:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -213,7 +213,7 @@ layers:
   - P
   - O
   - I
-  - '&td_u_y'
+  - {t: U, h: Y}
   - Y
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -226,7 +226,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - L
   - K
-  - '&td_j_h'
+  - {t: J, h: H}
   - H
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -237,9 +237,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '?'
+  - {t: Sft+/, s: 'Sft+?'}
   - {t: ',', s: <}
-  - '&td_m_n'
+  - {t: M, h: N}
   - N
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -249,7 +249,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - layer2
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
