@@ -1686,24 +1686,6 @@ rect.held, rect.combo.held {
 <text x="47" y="75" class="combo tap layer-activator"><tspan style="font-size: 75%">5_toggle</tspan></text>
 </a><text x="47" y="86" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-2">
-<path d="M168,130 l-67,31" class="combo"/>
-<path d="M168,130 l67,-31" class="combo"/>
-<rect rx="6" ry="6" x="154" y="117" width="28" height="26" class="combo"/>
-<text x="168" y="130" class="combo tap">Y</text>
-</g>
-<g class="combo combopos-3">
-<path d="M168,158 l-65,8" class="combo"/>
-<path d="M168,158 l65,-8" class="combo"/>
-<rect rx="6" ry="6" x="154" y="145" width="28" height="26" class="combo"/>
-<text x="168" y="158" class="combo tap">H</text>
-</g>
-<g class="combo combopos-4">
-<path d="M168,186 l-66,-14" class="combo"/>
-<path d="M168,186 l66,14" class="combo"/>
-<rect rx="6" ry="6" x="154" y="173" width="28" height="26" class="combo"/>
-<text x="168" y="186" class="combo tap">N</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 1553)" class="layer-4_rhs2">
@@ -2376,24 +2358,6 @@ rect.held, rect.combo.held {
 <a href="#toggle">
 <text x="47" y="75" class="combo tap layer-activator"><tspan style="font-size: 75%">5_toggle</tspan></text>
 </a><text x="47" y="86" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-2">
-<path d="M168,130 l-67,31" class="combo"/>
-<path d="M168,130 l67,-31" class="combo"/>
-<rect rx="6" ry="6" x="154" y="117" width="28" height="26" class="combo"/>
-<text x="168" y="130" class="combo tap">T</text>
-</g>
-<g class="combo combopos-3">
-<path d="M168,158 l-65,8" class="combo"/>
-<path d="M168,158 l65,-8" class="combo"/>
-<rect rx="6" ry="6" x="154" y="145" width="28" height="26" class="combo"/>
-<text x="168" y="158" class="combo tap">G</text>
-</g>
-<g class="combo combopos-4">
-<path d="M168,186 l-66,-14" class="combo"/>
-<path d="M168,186 l66,14" class="combo"/>
-<rect rx="6" ry="6" x="154" y="173" width="28" height="26" class="combo"/>
-<text x="168" y="186" class="combo tap">B</text>
 </g>
 </g>
 </g>
