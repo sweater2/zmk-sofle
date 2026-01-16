@@ -39,42 +39,42 @@
         td_u_y: tap_dance_u_y {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <200>;
             bindings = <&kp U>, <&kp Y>;
         };
 
         td_j_h: tap_dance_j_h {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <200>;
             bindings = <&kp J>, <&kp H>;
         };
 
         td_m_n: tap_dance_m_n {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <200>;
             bindings = <&kp M>, <&kp N>;
         };
 
         td_r_t: tap_dance_r_t {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <200>;
             bindings = <&kp R>, <&kp T>;
         };
 
         td_f_g: tap_dance_f_g {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <200>;
             bindings = <&kp F>, <&kp G>;
         };
 
         td_v_b: tap_dance_v_b {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <200>;
             bindings = <&kp V>, <&kp B>;
         };
     };
