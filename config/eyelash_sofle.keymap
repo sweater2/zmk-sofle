@@ -90,7 +90,7 @@
         };
 
         toggle_layer4 {
-            bindings = <&tog 5>;
+            bindings = <&tog 4>;
             key-positions = <13 0 1>;
             timeout-ms = <500>;
             require-prior-idle-ms = <1000>;
@@ -156,33 +156,33 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3_rhs {
-            bindings = <
-&trans    &kp N6  &kp N7        &kp N8     &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &kp P   &kp O         &kp I      &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp BSPC  &trans  &kp L         &kp K      &kp H   &kp H     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &kp LS(FSLH)  &kp COMMA  &kp M   &kp N     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &mo 2   &trans        &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_4_rhs2 {
+        layer_idle {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp Y   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp H   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp N   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        layer_5_toggle {
+        layer_4_toggle {
             bindings = <
 &trans  &trans  &trans  &trans  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &td_r_t  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &td_f_g  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &td_v_b  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &mo 3   &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &mo 5   &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_5_rhs {
+            bindings = <
+&trans    &kp N6  &kp N7        &kp N8     &kp N9   &kp N0    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp P   &kp O         &kp I      &td_u_y  &kp Y     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp BSPC  &trans  &kp L         &kp K      &td_j_h  &kp H     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &kp LS(FSLH)  &kp COMMA  &td_m_n  &kp N     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &mo 2   &trans        &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
