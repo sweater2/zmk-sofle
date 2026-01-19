@@ -90,7 +90,7 @@
         };
 
         toggle_layer4 {
-            bindings = <&tog 4>;
+            bindings = <&tog 1>;
             key-positions = <13 0 1>;
             timeout-ms = <500>;
             require-prior-idle-ms = <1000>;
@@ -99,42 +99,42 @@
         kp_y_ {
             bindings = <&kp Y>;
             key-positions = <27 17>;
-            layers = <5>;
+            layers = <2>;
             timeout-ms = <300>;
         };
 
         kp_h_ {
             bindings = <&kp H>;
             key-positions = <27 30>;
-            layers = <5>;
+            layers = <2>;
             timeout-ms = <300>;
         };
 
         kp_n_ {
             bindings = <&kp N>;
             key-positions = <27 43>;
-            layers = <5>;
+            layers = <2>;
             timeout-ms = <300>;
         };
 
         kp_t_ {
             bindings = <&kp T>;
             key-positions = <27 17>;
-            layers = <4>;
+            layers = <1>;
             timeout-ms = <300>;
         };
 
         kp_g_ {
             bindings = <&kp G>;
             key-positions = <27 30>;
-            layers = <4>;
+            layers = <1>;
             timeout-ms = <300>;
         };
 
         kp_b_ {
             bindings = <&kp B>;
             key-positions = <27 43>;
-            layers = <4>;
+            layers = <1>;
             timeout-ms = <300>;
         };
     };
@@ -162,30 +162,50 @@
         layer0 {
             bindings = <
 &kp ESC    &kp N1    &kp N2    &kp N3  &kp N4       &kp N5     &kp UP_ARROW     &kp N6   &kp N7    &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB    &kp Q     &kp W     &kp E   &mt T R      &kp T      &kp DOWN_ARROW   &kp Y    &mt Y U   &kp I      &kp O    &kp P     &kp BSLH
-&kp LSHFT  &kp A     &kp S     &kp D   &mt G F      &kp G      &kp LEFT_ARROW   &kp H    &mt H J   &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LCTRL  &kp Z     &kp X     &kp C   &mt B V      &kp B      &kp RIGHT_ARROW  &kp N    &mt N M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&kp RSHFT  &kp LALT  &kp LGUI  &mo 1   &lt 1 SPACE  &kp RET    &kp ENTER        &kp RET  &kp BSPC  &kp SPACE  &mo 1    &none
+&kp TAB    &kp Q     &kp W     &kp E   &td_r_t      &kp T      &kp DOWN_ARROW   &kp Y    &td_u_y   &kp I      &kp O    &kp P     &kp BSLH
+&kp LSHFT  &kp A     &kp S     &kp D   &td_f_g      &kp G      &kp LEFT_ARROW   &kp H    &td_j_h   &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LCTRL  &kp Z     &kp X     &kp C   &td_v_b      &kp B      &kp RIGHT_ARROW  &kp N    &td_m_n   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&kp RSHFT  &kp LALT  &kp LGUI  &mo 3   &lt 3 SPACE  &kp RET    &kp ENTER        &kp RET  &kp BSPC  &kp SPACE  &mo 3    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "LAYER0";
         };
 
-        layer_1 {
+        layer_rhs_toggle {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp ESC  &td_u_y  &kp I    &kp O    &kp P    &kp ESC
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp ESC  &td_j_h  &kp K    &kp L    &kp ESC  &kp ESC
+&trans  &trans  &trans  &mo 2   &trans  &trans    &trans  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC
+            >;
+        };
+
+        layer_rhs_keys {
+            bindings = <
+&trans    &kp N6    &kp N7        &kp N8     &kp N9   &kp N0    &trans  &trans  &trans   &trans  &trans  &trans  &trans
+&trans    &kp P     &kp O         &kp I      &td_u_y  &kp Y     &trans  &trans  &trans   &trans  &trans  &trans  &trans
+&kp BSPC  &trans    &kp L         &kp K      &td_j_h  &kp H     &trans  &trans  &trans   &trans  &trans  &trans  &trans
+&kp DOT   &kp BSPC  &kp LS(FSLH)  &kp COMMA  &td_m_n  &kp N     &trans  &trans  &td_m_n  &trans  &trans  &trans  &trans
+&trans    &mo 4     &trans        &trans     &trans   &trans    &trans  &trans  &trans   &trans  &trans  &trans
+            >;
+        };
+
+        layer_control {
             bindings = <
 &kp GRAVE   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans     &trans            &mmv MOVE_UP     &trans     &trans  &trans        &kp LBKT  &kp RBKT  &kp EQUAL
 &trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp T      &trans            &mmv MOVE_DOWN   &kp PG_UP  &kp Y   &trans        &trans    &trans    &trans
-&kp BSPC    &kp LEFT        &kp UP          &kp DOWN         &kp RIGHT  &msc SCRL_UP      &mmv MOVE_LEFT   &kp PG_DN  &kp H   &kp SPACE     &kp BSPC  &trans    &trans
+&kp BSPC    &kp LEFT        &kp UP          &kp DOWN         &kp RIGHT  &msc SCRL_UP      &mmv MOVE_LEFT   &kp PG_DN  &kp H   &trans        &trans    &trans    &trans
 &trans      &trans          &trans          &trans           &kp B      &msc SCRL_DOWN    &mmv MOVE_RIGHT  &trans     &kp N   &kp QUESTION  &trans    &trans    &trans
-&kp C_MUTE  &mo 2           &trans          &trans           &trans     &trans            &mkp LCLK        &trans     &trans  &trans        &trans    &trans
+&kp C_MUTE  &mo 4           &trans          &trans           &trans     &trans            &mkp LCLK        &trans     &trans  &trans        &trans    &trans
             >;
 
             display-name = "layer1";
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_2 {
+        layer_bt {
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &none  &none  &none  &none  &none  &none
 &kp CAPS    &kp B         &kp L         &kp U         &kp E         &kp T           &mmv MOVE_DOWN   &none  &none  &none  &none  &none  &none
@@ -205,26 +225,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_4_toggle {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &td_r_t  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &td_f_g  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &td_v_b  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &mo 5   &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_5_rhs {
-            bindings = <
-&trans    &kp N6  &kp N7        &kp N8     &kp N9   &kp N0    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &kp P   &kp O         &kp I      &td_u_y  &kp Y     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp BSPC  &trans  &kp L         &kp K      &td_j_h  &kp H     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &kp LS(FSLH)  &kp COMMA  &td_m_n  &kp N     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &mo 2   &trans        &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
