@@ -174,11 +174,11 @@
 
         layer_rhs_toggle {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp ESC  &td_u_y  &kp I    &kp O    &kp P    &kp ESC
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp ESC  &td_j_h  &kp K    &kp L    &kp ESC  &kp ESC
-&trans  &trans  &trans  &mo 2   &trans  &trans    &trans  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &td_u_y  &kp I    &kp O    &kp P    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &td_j_h  &kp K    &kp L    &trans  &trans
+&trans  &trans  &trans  &mo 2   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
