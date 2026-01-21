@@ -18,11 +18,11 @@ layers:
   - Q
   - W
   - E
-  - '&td_r_t'
+  - R
   - T
   - $$mdi:arrow-down-bold$$
   - Y
-  - '&td_u_y'
+  - U
   - I
   - O
   - P
@@ -31,11 +31,11 @@ layers:
   - A
   - S
   - D
-  - '&td_f_g'
+  - F
   - G
   - $$mdi:arrow-left-bold$$
   - H
-  - '&td_j_h'
+  - J
   - K
   - L
   - {t: ;, s: ':'}
@@ -44,11 +44,11 @@ layers:
   - Z
   - X
   - C
-  - '&td_v_b'
+  - V
   - B
   - $$mdi:arrow-right-bold$$
   - N
-  - '&td_m_n'
+  - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
@@ -56,7 +56,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
   - LGUI
-  - layer1
+  - {t: rhs_keys, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-space$$', h: layer1}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -148,7 +148,7 @@ layers:
   - P
   - O
   - I
-  - '&td_u_y'
+  - U
   - Y
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -161,7 +161,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - L
   - K
-  - '&td_j_h'
+  - J
   - H
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -174,7 +174,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: Sft+/, s: 'Sft+?'}
   - {t: ',', s: <}
-  - '&td_m_n'
+  - M
   - N
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -251,8 +251,8 @@ layers:
   - $$mdi:volume-off$$
   - layer2
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -395,21 +395,21 @@ combos:
   k: '&soft_off'
 - p: [13, 0, 1]
   k: {t: rhs_toggle, h: toggle}
-- p: [27, 17]
+- p: [16, 17]
+  k: T
+  l: [LAYER0]
+- p: [29, 30]
+  k: G
+  l: [LAYER0]
+- p: [55, 43]
+  k: B
+  l: [LAYER0]
+- p: [16, 17]
   k: Y
   l: [rhs_keys]
-- p: [27, 30]
+- p: [29, 30]
   k: H
   l: [rhs_keys]
-- p: [27, 43]
+- p: [55, 43]
   k: N
   l: [rhs_keys]
-- p: [27, 17]
-  k: T
-  l: [rhs_toggle]
-- p: [27, 30]
-  k: G
-  l: [rhs_toggle]
-- p: [27, 43]
-  k: B
-  l: [rhs_toggle]
