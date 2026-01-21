@@ -96,46 +96,46 @@
             require-prior-idle-ms = <1000>;
         };
 
-        kp_y_ {
-            bindings = <&kp Y>;
-            key-positions = <27 17>;
-            layers = <2>;
-            timeout-ms = <300>;
-        };
-
-        kp_h_ {
-            bindings = <&kp H>;
-            key-positions = <27 30>;
-            layers = <2>;
-            timeout-ms = <300>;
-        };
-
-        kp_n_ {
-            bindings = <&kp N>;
-            key-positions = <27 43>;
-            layers = <2>;
-            timeout-ms = <300>;
-        };
-
-        kp_t_ {
+        kpt {
             bindings = <&kp T>;
-            key-positions = <27 17>;
-            layers = <1>;
-            timeout-ms = <300>;
+            key-positions = <16 17>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
 
-        kp_g_ {
+        kpg {
             bindings = <&kp G>;
-            key-positions = <27 30>;
-            layers = <1>;
-            timeout-ms = <300>;
+            key-positions = <29 30>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
 
-        kp_b_ {
+        kpb {
             bindings = <&kp B>;
-            key-positions = <27 43>;
-            layers = <1>;
-            timeout-ms = <300>;
+            key-positions = <55 43>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        kpy {
+            bindings = <&kp Y>;
+            key-positions = <16 17>;
+            timeout-ms = <50>;
+            layers = <2>;
+        };
+
+        kph {
+            bindings = <&kp H>;
+            key-positions = <29 30>;
+            timeout-ms = <50>;
+            layers = <2>;
+        };
+
+        kpn {
+            bindings = <&kp N>;
+            key-positions = <55 43>;
+            timeout-ms = <50>;
+            layers = <2>;
         };
     };
 
@@ -162,10 +162,10 @@
         layer0 {
             bindings = <
 &kp ESC    &kp N1    &kp N2    &kp N3  &kp N4       &kp N5     &kp UP_ARROW     &kp N6   &kp N7    &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB    &kp Q     &kp W     &kp E   &td_r_t      &kp T      &kp DOWN_ARROW   &kp Y    &td_u_y   &kp I      &kp O    &kp P     &kp BSLH
-&kp LSHFT  &kp A     &kp S     &kp D   &td_f_g      &kp G      &kp LEFT_ARROW   &kp H    &td_j_h   &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LCTRL  &kp Z     &kp X     &kp C   &td_v_b      &kp B      &kp RIGHT_ARROW  &kp N    &td_m_n   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&kp RSHFT  &kp LALT  &kp LGUI  &mo 3   &lt 3 SPACE  &kp RET    &kp ENTER        &kp RET  &kp BSPC  &kp SPACE  &mo 3    &none
+&kp TAB    &kp Q     &kp W     &kp E   &kp R        &kp T      &kp DOWN_ARROW   &kp Y    &kp U     &kp I      &kp O    &kp P     &kp BSLH
+&kp LSHFT  &kp A     &kp S     &kp D   &kp F        &kp G      &kp LEFT_ARROW   &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LCTRL  &kp Z     &kp X     &kp C   &kp V        &kp B      &kp RIGHT_ARROW  &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&kp RSHFT  &kp LALT  &kp LGUI  &sl 2   &lt 3 SPACE  &kp RET    &kp ENTER        &kp RET  &kp BSPC  &kp SPACE  &mo 3    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -184,11 +184,11 @@
 
         layer_rhs_keys {
             bindings = <
-&trans    &kp N6    &kp N7        &kp N8     &kp N9   &kp N0    &trans  &trans  &trans   &trans  &trans  &trans  &trans
-&trans    &kp P     &kp O         &kp I      &td_u_y  &kp Y     &trans  &trans  &trans   &trans  &trans  &trans  &trans
-&kp BSPC  &trans    &kp L         &kp K      &td_j_h  &kp H     &trans  &trans  &trans   &trans  &trans  &trans  &trans
-&kp DOT   &kp BSPC  &kp LS(FSLH)  &kp COMMA  &td_m_n  &kp N     &trans  &trans  &td_m_n  &trans  &trans  &trans  &trans
-&trans    &mo 4     &trans        &trans     &trans   &trans    &trans  &trans  &trans   &trans  &trans  &trans
+&trans    &kp N6    &kp N7        &kp N8     &kp N9  &kp N0    &trans  &trans  &trans   &trans  &trans  &trans  &trans
+&trans    &kp P     &kp O         &kp I      &kp U   &kp Y     &trans  &trans  &trans   &trans  &trans  &trans  &trans
+&kp BSPC  &trans    &kp L         &kp K      &kp J   &kp H     &trans  &trans  &trans   &trans  &trans  &trans  &trans
+&kp DOT   &kp BSPC  &kp LS(FSLH)  &kp COMMA  &kp M   &kp N     &trans  &trans  &td_m_n  &trans  &trans  &trans  &trans
+&trans    &mo 4     &trans        &trans     &trans  &trans    &trans  &trans  &trans   &trans  &trans  &trans
             >;
         };
 
