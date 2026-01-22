@@ -92,43 +92,85 @@
         kpt {
             bindings = <&kp T>;
             key-positions = <16 17>;
-            timeout-ms = <50>;
+            timeout-ms = <130>;
             layers = <0>;
         };
 
         kpg {
             bindings = <&kp G>;
             key-positions = <29 30>;
-            timeout-ms = <50>;
+            timeout-ms = <130>;
             layers = <0>;
         };
 
         kpb {
             bindings = <&kp B>;
             key-positions = <42 43>;
-            timeout-ms = <50>;
+            timeout-ms = <130>;
             layers = <0>;
         };
 
         kpt2 {
             bindings = <&kp T>;
             key-positions = <15 16>;
-            timeout-ms = <50>;
+            timeout-ms = <130>;
             layers = <0>;
         };
 
         kpg2 {
             bindings = <&kp G>;
             key-positions = <28 29>;
-            timeout-ms = <50>;
+            timeout-ms = <130>;
             layers = <0>;
         };
 
         kpb2 {
             bindings = <&kp B>;
             key-positions = <41 42>;
+            timeout-ms = <130>;
             layers = <0>;
-            timeout-ms = <50>;
+        };
+
+        kpy {
+            bindings = <&kp Y>;
+            key-positions = <16 17>;
+            timeout-ms = <130>;
+            layers = <2>;
+        };
+
+        kph {
+            bindings = <&kp H>;
+            key-positions = <29 30>;
+            timeout-ms = <130>;
+            layers = <2>;
+        };
+
+        kpn {
+            bindings = <&kp N>;
+            key-positions = <42 43>;
+            timeout-ms = <130>;
+            layers = <2>;
+        };
+
+        kpy2 {
+            bindings = <&kp Y>;
+            key-positions = <15 16>;
+            timeout-ms = <130>;
+            layers = <2>;
+        };
+
+        kph2 {
+            bindings = <&kp H>;
+            key-positions = <28 29>;
+            timeout-ms = <130>;
+            layers = <2>;
+        };
+
+        kpn2 {
+            bindings = <&kp N>;
+            key-positions = <41 42>;
+            timeout-ms = <130>;
+            layers = <2>;
         };
 
         toggle_control {
