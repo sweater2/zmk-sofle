@@ -89,13 +89,6 @@
             key-positions = <14 28 40>;
         };
 
-        toggle_layer4 {
-            bindings = <&tog 1>;
-            key-positions = <13 0 1>;
-            timeout-ms = <500>;
-            require-prior-idle-ms = <1000>;
-        };
-
         kpt {
             bindings = <&kp T>;
             key-positions = <16 17>;
@@ -136,6 +129,13 @@
             key-positions = <41 42>;
             layers = <0>;
             timeout-ms = <50>;
+        };
+
+        toggle_control {
+            bindings = <&tog 3>;
+            key-positions = <56 44 43 42>;
+            timeout-ms = <400>;
+            require-prior-idle-ms = <800>;
         };
     };
 
