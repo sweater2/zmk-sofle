@@ -401,15 +401,15 @@ combos:
 - p: [29, 30]
   k: G
   l: [LAYER0]
-- p: [55, 43]
+- p: [42, 43]
   k: B
   l: [LAYER0]
-- p: [16, 17]
-  k: Y
-  l: [rhs_keys]
-- p: [29, 30]
-  k: H
-  l: [rhs_keys]
-- p: [55, 43]
-  k: N
-  l: [rhs_keys]
+- p: [15, 16]
+  k: T
+  l: [LAYER0]
+- p: [28, 29]
+  k: G
+  l: [LAYER0]
+- p: [41, 42]
+  k: B
+  l: [LAYER0]
