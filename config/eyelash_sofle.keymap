@@ -112,30 +112,30 @@
 
         kpb {
             bindings = <&kp B>;
-            key-positions = <55 43>;
+            key-positions = <42 43>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
-        kpy {
-            bindings = <&kp Y>;
-            key-positions = <16 17>;
+        kpt2 {
+            bindings = <&kp T>;
+            key-positions = <15 16>;
             timeout-ms = <50>;
-            layers = <2>;
+            layers = <0>;
         };
 
-        kph {
-            bindings = <&kp H>;
-            key-positions = <29 30>;
+        kpg2 {
+            bindings = <&kp G>;
+            key-positions = <28 29>;
             timeout-ms = <50>;
-            layers = <2>;
+            layers = <0>;
         };
 
-        kpn {
-            bindings = <&kp N>;
-            key-positions = <55 43>;
+        kpb2 {
+            bindings = <&kp B>;
+            key-positions = <41 42>;
+            layers = <0>;
             timeout-ms = <50>;
-            layers = <2>;
         };
     };
 
