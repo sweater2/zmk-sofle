@@ -92,84 +92,84 @@
         kpt {
             bindings = <&kp T>;
             key-positions = <16 17>;
-            timeout-ms = <130>;
+            timeout-ms = <90>;
             layers = <0>;
         };
 
         kpg {
             bindings = <&kp G>;
             key-positions = <29 30>;
-            timeout-ms = <130>;
+            timeout-ms = <90>;
             layers = <0>;
         };
 
         kpb {
             bindings = <&kp B>;
             key-positions = <42 43>;
-            timeout-ms = <130>;
+            timeout-ms = <90>;
             layers = <0>;
         };
 
         kpt2 {
             bindings = <&kp T>;
             key-positions = <15 16>;
-            timeout-ms = <130>;
+            timeout-ms = <30>;
             layers = <0>;
         };
 
         kpg2 {
             bindings = <&kp G>;
             key-positions = <28 29>;
-            timeout-ms = <130>;
+            timeout-ms = <30>;
             layers = <0>;
         };
 
         kpb2 {
             bindings = <&kp B>;
             key-positions = <41 42>;
-            timeout-ms = <130>;
+            timeout-ms = <30>;
             layers = <0>;
         };
 
         kpy {
             bindings = <&kp Y>;
             key-positions = <16 17>;
-            timeout-ms = <130>;
+            timeout-ms = <90>;
             layers = <2>;
         };
 
         kph {
             bindings = <&kp H>;
             key-positions = <29 30>;
-            timeout-ms = <130>;
+            timeout-ms = <90>;
             layers = <2>;
         };
 
         kpn {
             bindings = <&kp N>;
             key-positions = <42 43>;
-            timeout-ms = <130>;
+            timeout-ms = <90>;
             layers = <2>;
         };
 
         kpy2 {
             bindings = <&kp Y>;
             key-positions = <15 16>;
-            timeout-ms = <130>;
+            timeout-ms = <30>;
             layers = <2>;
         };
 
         kph2 {
             bindings = <&kp H>;
             key-positions = <28 29>;
-            timeout-ms = <130>;
+            timeout-ms = <30>;
             layers = <2>;
         };
 
         kpn2 {
             bindings = <&kp N>;
             key-positions = <41 42>;
-            timeout-ms = <130>;
+            timeout-ms = <30>;
             layers = <2>;
         };
 
@@ -207,7 +207,7 @@
 &kp TAB    &kp Q     &kp W     &kp E   &kp R        &kp T      &kp DOWN_ARROW   &kp Y    &kp U     &kp I      &kp O    &kp P     &kp BSLH
 &kp LSHFT  &kp A     &kp S     &kp D   &kp F        &kp G      &kp LEFT_ARROW   &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
 &kp LCTRL  &kp Z     &kp X     &kp C   &kp V        &kp B      &kp RIGHT_ARROW  &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&kp RSHFT  &kp LALT  &kp LGUI  &sl 2   &lt 3 SPACE  &kp RET    &kp ENTER        &kp RET  &kp BSPC  &kp SPACE  &mo 3    &none
+&kp RSHFT  &kp LALT  &kp LGUI  &mo 2   &lt 3 SPACE  &kp RET    &kp ENTER        &kp RET  &kp BSPC  &kp SPACE  &mo 3    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -271,3 +271,4 @@
         };
     };
 };
+
