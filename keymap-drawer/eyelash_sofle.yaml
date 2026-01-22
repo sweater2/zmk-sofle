@@ -411,5 +411,23 @@ combos:
 - p: [41, 42]
   k: B
   l: [LAYER0]
+- p: [16, 17]
+  k: Y
+  l: [rhs_keys]
+- p: [29, 30]
+  k: H
+  l: [rhs_keys]
+- p: [42, 43]
+  k: N
+  l: [rhs_keys]
+- p: [15, 16]
+  k: Y
+  l: [rhs_keys]
+- p: [28, 29]
+  k: H
+  l: [rhs_keys]
+- p: [41, 42]
+  k: N
+  l: [rhs_keys]
 - p: [56, 44, 43, 42]
   k: {t: layer1, h: toggle}
