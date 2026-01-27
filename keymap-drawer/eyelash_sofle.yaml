@@ -433,19 +433,19 @@ combos:
   k: {t: layer1, h: toggle}
 - p: [47, 48]
   k: N
-  l: [rhs_keys]
+  l: [LAYER0]
 - p: [34, 35]
-  k: N
-  l: [rhs_keys]
+  k: H
+  l: [LAYER0]
 - p: [21, 22]
-  k: N
-  l: [rhs_keys]
+  k: Y
+  l: [LAYER0]
 - p: [48, 49]
   k: N
-  l: [rhs_keys]
+  l: [LAYER0]
 - p: [35, 36]
-  k: N
-  l: [rhs_keys]
+  k: H
+  l: [LAYER0]
 - p: [22, 23]
-  k: N
-  l: [rhs_keys]
+  k: Y
+  l: [LAYER0]
