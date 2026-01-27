@@ -197,7 +197,7 @@
         kpy3 {
             bindings = <&kp Y>;
             key-positions = <21 22>;
-            timeout-ms = <70>;
+            timeout-ms = <50>;
             layers = <0>;
         };
 
@@ -245,11 +245,11 @@
 
         layer0 {
             bindings = <
-&kp ESC    &kp N1    &kp N2    &kp N3  &kp N4       &kp N5     &kp UP_ARROW     &kp N6   &kp N7    &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB    &kp Q     &kp W     &kp E   &kp R        &kp T      &kp DOWN_ARROW   &kp Y    &kp U     &kp I      &kp O    &kp P     &kp BSLH
-&kp LSHFT  &kp A     &kp S     &kp D   &kp F        &kp G      &kp LEFT_ARROW   &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LCTRL  &kp Z     &kp X     &kp C   &kp V        &kp B      &kp RIGHT_ARROW  &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&kp RSHFT  &kp LALT  &kp LGUI  &mo 2   &lt 3 SPACE  &kp RET    &kp ENTER        &kp RET  &kp BSPC  &kp SPACE  &mo 3    &none
+&kp ESC    &kp N1    &kp N2    &kp N3       &kp N4  &kp N5     &kp UP_ARROW     &kp N6   &kp N7    &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp TAB    &kp Q     &kp W     &kp E        &kp R   &kp T      &kp DOWN_ARROW   &kp Y    &kp U     &kp I      &kp O    &kp P     &kp BSLH
+&kp LSHFT  &kp A     &kp S     &kp D        &kp F   &kp G      &kp LEFT_ARROW   &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LCTRL  &kp Z     &kp X     &kp C        &kp V   &kp B      &kp RIGHT_ARROW  &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&kp RSHFT  &kp LALT  &kp LGUI  &lt 3 SPACE  &mo 2   &kp RET    &kp ENTER        &kp RET  &kp BSPC  &kp SPACE  &mo 3    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -278,11 +278,11 @@
 
         layer_control {
             bindings = <
-&kp GRAVE   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans     &trans            &mmv MOVE_UP     &trans     &trans  &trans        &kp LBKT  &kp RBKT  &kp EQUAL
-&trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp T      &trans            &mmv MOVE_DOWN   &kp PG_UP  &kp Y   &trans        &trans    &trans    &trans
-&kp BSPC    &kp LEFT        &kp UP          &kp DOWN         &kp RIGHT  &msc SCRL_UP      &mmv MOVE_LEFT   &kp PG_DN  &kp H   &trans        &trans    &trans    &trans
-&trans      &trans          &trans          &trans           &kp B      &msc SCRL_DOWN    &mmv MOVE_RIGHT  &trans     &kp N   &kp QUESTION  &trans    &trans    &trans
-&kp C_MUTE  &mo 4           &trans          &trans           &trans     &trans            &mkp LCLK        &trans     &trans  &trans        &trans    &trans
+&kp GRAVE   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans     &trans            &mmv MOVE_UP     &trans     &trans  &trans         &kp LBKT  &kp RBKT  &kp EQUAL
+&trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp T      &trans            &mmv MOVE_DOWN   &kp PG_UP  &kp Y   &trans         &trans    &trans    &trans
+&kp BSPC    &kp LEFT        &kp UP          &kp DOWN         &kp RIGHT  &msc SCRL_UP      &mmv MOVE_LEFT   &kp PG_DN  &kp H   &trans         &trans    &trans    &trans
+&trans      &trans          &kp LS(SLASH)   &trans           &kp B      &msc SCRL_DOWN    &mmv MOVE_RIGHT  &trans     &kp N   &kp LS(SLASH)  &trans    &trans    &trans
+&kp C_MUTE  &mo 4           &trans          &trans           &trans     &trans            &mkp LCLK        &trans     &trans  &trans         &trans    &trans
             >;
 
             display-name = "layer1";
