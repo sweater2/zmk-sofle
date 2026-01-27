@@ -180,46 +180,46 @@
             require-prior-idle-ms = <800>;
         };
 
-        asd {
+        kpn3 {
             bindings = <&kp N>;
             key-positions = <47 48>;
             timeout-ms = <70>;
-            layers = <2>;
+            layers = <0>;
         };
 
-        asd2 {
-            bindings = <&kp N>;
+        kph3 {
+            bindings = <&kp H>;
             key-positions = <34 35>;
             timeout-ms = <70>;
-            layers = <2>;
+            layers = <0>;
         };
 
-        asd3 {
-            bindings = <&kp N>;
+        kpy3 {
+            bindings = <&kp Y>;
             key-positions = <21 22>;
             timeout-ms = <70>;
-            layers = <2>;
+            layers = <0>;
         };
 
-        asd4 {
+        kpn4 {
             bindings = <&kp N>;
             key-positions = <48 49>;
             timeout-ms = <70>;
-            layers = <2>;
+            layers = <0>;
         };
 
-        asd5 {
-            bindings = <&kp N>;
+        kph4 {
+            bindings = <&kp H>;
             key-positions = <35 36>;
             timeout-ms = <70>;
-            layers = <2>;
+            layers = <0>;
         };
 
-        asd6 {
-            bindings = <&kp N>;
+        kpy4 {
+            bindings = <&kp Y>;
             key-positions = <22 23>;
             timeout-ms = <70>;
-            layers = <2>;
+            layers = <0>;
         };
     };
 
