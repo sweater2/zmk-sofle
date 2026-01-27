@@ -175,9 +175,51 @@
 
         toggle_control {
             bindings = <&tog 3>;
-            key-positions = <56 44 43 42>;
+            key-positions = <56 43 42>;
             timeout-ms = <400>;
             require-prior-idle-ms = <800>;
+        };
+
+        asd {
+            bindings = <&kp N>;
+            key-positions = <47 48>;
+            timeout-ms = <70>;
+            layers = <2>;
+        };
+
+        asd2 {
+            bindings = <&kp N>;
+            key-positions = <34 35>;
+            timeout-ms = <70>;
+            layers = <2>;
+        };
+
+        asd3 {
+            bindings = <&kp N>;
+            key-positions = <21 22>;
+            timeout-ms = <70>;
+            layers = <2>;
+        };
+
+        asd4 {
+            bindings = <&kp N>;
+            key-positions = <48 49>;
+            timeout-ms = <70>;
+            layers = <2>;
+        };
+
+        asd5 {
+            bindings = <&kp N>;
+            key-positions = <35 36>;
+            timeout-ms = <70>;
+            layers = <2>;
+        };
+
+        asd6 {
+            bindings = <&kp N>;
+            key-positions = <22 23>;
+            timeout-ms = <70>;
+            layers = <2>;
         };
     };
 
@@ -271,4 +313,3 @@
         };
     };
 };
-
