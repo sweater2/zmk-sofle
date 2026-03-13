@@ -10,15 +10,18 @@
 
 &mmv_input_listener {
     // 默认倍率：原配置是 1倍速
+
     input-processors = <&zip_xy_scaler 1 1>;
 
     // 档位3：极速 (当处于第7层时，3倍速)
+
     gear_extreme {
         layers = <7>;
         input-processors = <&zip_xy_scaler 3 1>;
     };
 
     // 档位2：快速 (当处于第6层时，2倍速)
+
     gear_fast {
         layers = <6>;
         input-processors = <&zip_xy_scaler 2 1>;
@@ -43,9 +46,7 @@
 
 &mt { flavor = "balanced"; };
 
-&lt {
-    tapping-term-ms = <100>;
-};
+&lt { tapping-term-ms = <100>; };
 
 / {
     scroll_encoder: scroll_encoder {
@@ -239,6 +240,20 @@
             key-positions = <22 23>;
             timeout-ms = <70>;
             layers = <0>;
+        };
+
+        mouse_fast {
+            bindings = <&tog 6>;
+            key-positions = <55 1 2>;
+            timeout-ms = <300>;
+            require-prior-idle-ms = <500>;
+        };
+
+        mouse_xfast {
+            bindings = <&tog 7>;
+            key-positions = <55 0 1>;
+            timeout-ms = <300>;
+            require-prior-idle-ms = <500>;
         };
     };
 
