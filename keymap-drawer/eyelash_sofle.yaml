@@ -521,8 +521,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [14, 28, 40]
-  k: '&soft_off'
 - p: [16, 17]
   k: T
   l: [LAYER0]
@@ -579,7 +577,7 @@ combos:
 - p: [22, 23]
   k: Y
   l: [LAYER0]
-- p: [55, 1, 2]
+- p: [56, 1, 2]
   k: {t: _GEAR_FAST, h: toggle}
-- p: [55, 0, 1]
+- p: [56, 0, 1]
   k: {t: _GEAR_EXTREME, h: toggle}
