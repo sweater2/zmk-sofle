@@ -279,7 +279,7 @@ layers:
   - L
   - U
   - E
-  - $$mdi:progress-download$$
+  - T
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -393,7 +393,7 @@ layers:
   _GEAR_FAST:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mmv_acc0 MOVE_UP'
+  - '&mmv_acc0 MOVE_Y(600)'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -405,9 +405,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mmv_acc0 MOVE_LEFT'
-  - '&mmv_acc0 MOVE_DOWN'
-  - '&mmv_acc0 MOVE_RIGHT'
+  - '&mmv_acc0 MOVE_X(-600)'
+  - '&mmv_acc0 MOVE_Y(-600)'
+  - '&mmv_acc0 MOVE_X(600)'
   - '&mmv_acc2 MOVE_Y(600)'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
