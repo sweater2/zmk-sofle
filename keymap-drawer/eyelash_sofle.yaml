@@ -526,57 +526,57 @@ combos:
   l: [LAYER0, _GEAR_FAST, _GEAR_EXTREME]
 - p: [29, 30]
   k: G
-  l: [LAYER0]
+  l: [LAYER0, _GEAR_FAST, _GEAR_EXTREME]
 - p: [42, 43]
   k: B
-  l: [LAYER0]
+  l: [LAYER0, _GEAR_FAST, _GEAR_EXTREME]
 - p: [15, 16]
   k: T
-  l: [LAYER0]
+  l: [LAYER0, _GEAR_FAST, _GEAR_EXTREME]
 - p: [28, 29]
   k: G
-  l: [LAYER0]
+  l: [LAYER0, _GEAR_FAST, _GEAR_EXTREME]
 - p: [41, 42]
   k: B
-  l: [LAYER0]
+  l: [LAYER0, _GEAR_FAST, _GEAR_EXTREME]
 - p: [16, 17]
   k: Y
-  l: [rhs_keys]
+  l: [rhs_keys, _GEAR_FAST, _GEAR_EXTREME]
 - p: [29, 30]
   k: H
-  l: [rhs_keys]
+  l: [rhs_keys, _GEAR_FAST, _GEAR_EXTREME]
 - p: [42, 43]
   k: N
-  l: [rhs_keys]
+  l: [rhs_keys, _GEAR_FAST, _GEAR_EXTREME]
 - p: [15, 16]
   k: Y
-  l: [rhs_keys]
+  l: [rhs_keys, _GEAR_FAST, _GEAR_EXTREME]
 - p: [28, 29]
   k: H
-  l: [rhs_keys]
+  l: [rhs_keys, _GEAR_FAST, _GEAR_EXTREME]
 - p: [41, 42]
   k: N
-  l: [rhs_keys]
+  l: [rhs_keys, _GEAR_FAST, _GEAR_EXTREME]
 - p: [56, 43, 42]
   k: {t: layer_control, h: toggle}
 - p: [47, 48]
   k: N
-  l: [LAYER0]
+  l: [LAYER0, _GEAR_FAST, _GEAR_EXTREME]
 - p: [34, 35]
   k: H
-  l: [LAYER0]
+  l: [LAYER0, _GEAR_FAST, _GEAR_EXTREME]
 - p: [21, 22]
   k: Y
-  l: [LAYER0]
+  l: [LAYER0, _GEAR_FAST, _GEAR_EXTREME]
 - p: [48, 49]
   k: N
-  l: [LAYER0]
+  l: [LAYER0, _GEAR_FAST, _GEAR_EXTREME]
 - p: [35, 36]
   k: H
-  l: [LAYER0]
+  l: [LAYER0, _GEAR_FAST, _GEAR_EXTREME]
 - p: [22, 23]
   k: Y
-  l: [LAYER0]
+  l: [LAYER0, _GEAR_FAST, _GEAR_EXTREME]
 - p: [56, 27]
   k: {t: _GEAR_FAST, h: toggle}
 - p: [56, 28]
