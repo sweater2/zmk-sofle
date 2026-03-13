@@ -375,11 +375,11 @@
         layer_mouse_fast {
             display-name = "_GEAR_FAST";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &mmv_acc0 MOVE_Y(600)   &trans                  &trans                  &trans                   &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mmv_acc0 MOVE_X(-600)  &mmv_acc0 MOVE_Y(-600)  &mmv_acc0 MOVE_X(600)   &mmv_acc2 MOVE_Y(600)   &trans                   &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &mmv_acc1 MOVE_Y(600)   &mmv_acc2 MOVE_X(-600)  &mmv_acc2 MOVE_Y(-600)  &mmv_acc2 MOVE_X(600)    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mmv_acc1 MOVE_X(-600)  &mmv_acc1 MOVE_Y(-600)  &mmv_acc1 MOVE_X(600)   &trans                  &trans                   &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &trans                  &trans                  &trans                  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
