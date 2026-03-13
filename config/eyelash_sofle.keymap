@@ -352,7 +352,7 @@
         layer_bt {
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &none  &none  &none  &none  &none  &none
-&kp CAPS    &kp B         &kp L         &kp U         &kp E         &kp T           &mmv MOVE_DOWN   &none  &none  &none  &none  &none  &none
+&kp CAPS    &kp B         &kp L         &kp U         &kp E         &bootloader     &mmv MOVE_DOWN   &none  &none  &none  &none  &none  &none
 &none       &none         &none         &none         &none         &none           &mmv MOVE_LEFT   &none  &none  &none  &none  &none  &none
 &none       &none         &none         &none         &none         &none           &mmv MOVE_RIGHT  &none  &none  &none  &none  &none  &none
 &none       &none         &none         &none         &none         &soft_off       &mkp LCLK        &none  &none  &none  &none  &none
