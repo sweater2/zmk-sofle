@@ -523,7 +523,7 @@ layers:
 combos:
 - p: [16, 17]
   k: T
-  l: [LAYER0]
+  l: [LAYER0, _GEAR_FAST, _GEAR_EXTREME]
 - p: [29, 30]
   k: G
   l: [LAYER0]
