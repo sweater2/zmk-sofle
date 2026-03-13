@@ -109,7 +109,7 @@
             bindings = <&kp T>;
             key-positions = <16 17>;
             timeout-ms = <70>;
-            layers = <0>;
+            layers = <0 6 7>;
         };
 
         kpg {
