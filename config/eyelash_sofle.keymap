@@ -59,6 +59,36 @@
     };
 
     behaviors {
+        mmv_acc0: mmv_acc0 {
+            compatible = "zmk,behavior-input-two-axis";
+            #binding-cells = <1>;
+            x-input-code = <INPUT_REL_X>;
+            y-input-code = <INPUT_REL_Y>;
+            time-to-max-speed-ms = <800>;
+            trigger-period-ms = <2>;
+            acceleration-exponent = <0>;
+        };
+
+        mmv_acc1: mmv_acc1 {
+            compatible = "zmk,behavior-input-two-axis";
+            #binding-cells = <1>;
+            x-input-code = <INPUT_REL_X>;
+            y-input-code = <INPUT_REL_Y>;
+            time-to-max-speed-ms = <800>;
+            trigger-period-ms = <2>;
+            acceleration-exponent = <1>;
+        };
+
+        mmv_acc2: mmv_acc2 {
+            compatible = "zmk,behavior-input-two-axis";
+            #binding-cells = <1>;
+            x-input-code = <INPUT_REL_X>;
+            y-input-code = <INPUT_REL_Y>;
+            time-to-max-speed-ms = <800>;
+            trigger-period-ms = <2>;
+            acceleration-exponent = <2>;
+        };
+
         td_u_y: tap_dance_u_y {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
