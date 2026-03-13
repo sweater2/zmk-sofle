@@ -1,5 +1,5 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 600, 1200
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 15   // 10, 25
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 300  // 600, 1200
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20   // 10, 25
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -11,30 +11,30 @@
 &mmv_input_listener {
     // 默认倍率：原配置是 1倍速
 
-    input-processors = <&zip_xy_scaler 2 1>;
+    input-processors = <&zip_xy_scaler 4 1>;
 
     // 档位3：极速 (当处于第7层时，2倍速)
 
     gear_extreme {
         layers = <7>;
-        input-processors = <&zip_xy_scaler 4 1>;
+        input-processors = <&zip_xy_scaler 6 1>;
     };
 
     // 档位2：快速 (当处于第6层时，1.5倍速)
 
     gear_fast {
         layers = <6>;
-        input-processors = <&zip_xy_scaler 3 1>;
+        input-processors = <&zip_xy_scaler 5 1>;
     };
 };
 
-&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
+&msc_input_listener { input-processors = <&zip_scroll_scaler 1 1>; };
 
 &msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <50>;       // 5, 300
+    acceleration-exponent = <0>;      // 0
+    time-to-max-speed-ms = <1>;       // 5, 300
     delay-ms = <0>;                   // 0
-    trigger-period-ms = <2>;
+    trigger-period-ms = <1>;
 };
 
 &mmv {
@@ -116,77 +116,77 @@
             bindings = <&kp G>;
             key-positions = <29 30>;
             timeout-ms = <70>;
-            layers = <0>;
+            layers = <0 6 7>;
         };
 
         kpb {
             bindings = <&kp B>;
             key-positions = <42 43>;
             timeout-ms = <70>;
-            layers = <0>;
+            layers = <0 6 7>;
         };
 
         kpt2 {
             bindings = <&kp T>;
             key-positions = <15 16>;
             timeout-ms = <70>;
-            layers = <0>;
+            layers = <0 6 7>;
         };
 
         kpg2 {
             bindings = <&kp G>;
             key-positions = <28 29>;
             timeout-ms = <70>;
-            layers = <0>;
+            layers = <0 6 7>;
         };
 
         kpb2 {
             bindings = <&kp B>;
             key-positions = <41 42>;
             timeout-ms = <70>;
-            layers = <0>;
+            layers = <0 6 7>;
         };
 
         kpy {
             bindings = <&kp Y>;
             key-positions = <16 17>;
             timeout-ms = <70>;
-            layers = <2>;
+            layers = <2 6 7>;
         };
 
         kph {
             bindings = <&kp H>;
             key-positions = <29 30>;
             timeout-ms = <70>;
-            layers = <2>;
+            layers = <2 6 7>;
         };
 
         kpn {
             bindings = <&kp N>;
             key-positions = <42 43>;
             timeout-ms = <70>;
-            layers = <2>;
+            layers = <2 6 7>;
         };
 
         kpy2 {
             bindings = <&kp Y>;
             key-positions = <15 16>;
             timeout-ms = <70>;
-            layers = <2>;
+            layers = <2 6 7>;
         };
 
         kph2 {
             bindings = <&kp H>;
             key-positions = <28 29>;
             timeout-ms = <70>;
-            layers = <2>;
+            layers = <2 6 7>;
         };
 
         kpn2 {
             bindings = <&kp N>;
             key-positions = <41 42>;
             timeout-ms = <70>;
-            layers = <2>;
+            layers = <2 6 7>;
         };
 
         toggle_control {
@@ -200,42 +200,42 @@
             bindings = <&kp N>;
             key-positions = <47 48>;
             timeout-ms = <70>;
-            layers = <0>;
+            layers = <0 6 7>;
         };
 
         kph3 {
             bindings = <&kp H>;
             key-positions = <34 35>;
             timeout-ms = <70>;
-            layers = <0>;
+            layers = <0 6 7>;
         };
 
         kpy3 {
             bindings = <&kp Y>;
             key-positions = <21 22>;
             timeout-ms = <50>;
-            layers = <0>;
+            layers = <0 6 7>;
         };
 
         kpn4 {
             bindings = <&kp N>;
             key-positions = <48 49>;
             timeout-ms = <70>;
-            layers = <0>;
+            layers = <0 6 7>;
         };
 
         kph4 {
             bindings = <&kp H>;
             key-positions = <35 36>;
             timeout-ms = <70>;
-            layers = <0>;
+            layers = <0 6 7>;
         };
 
         kpy4 {
             bindings = <&kp Y>;
             key-positions = <22 23>;
             timeout-ms = <70>;
-            layers = <0>;
+            layers = <0 6 7>;
         };
 
         mouse_fast {
