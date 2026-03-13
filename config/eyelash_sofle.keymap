@@ -239,14 +239,14 @@
 
         mouse_fast {
             bindings = <&tog 6>;
-            key-positions = <56 1 2>;
+            key-positions = <56 27>;
             require-prior-idle-ms = <500>;
             timeout-ms = <60>;
         };
 
         mouse_xfast {
             bindings = <&tog 7>;
-            key-positions = <56 0 1>;
+            key-positions = <56 28>;
             require-prior-idle-ms = <500>;
             timeout-ms = <60>;
         };
