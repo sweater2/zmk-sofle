@@ -104,11 +104,6 @@
     combos {
         compatible = "zmk,combos";
 
-        softoff {
-            bindings = <&soft_off>;
-            key-positions = <14 28 40>;
-        };
-
         kpt {
             bindings = <&kp T>;
             key-positions = <16 17>;
@@ -244,16 +239,16 @@
 
         mouse_fast {
             bindings = <&tog 6>;
-            key-positions = <55 1 2>;
-            timeout-ms = <300>;
+            key-positions = <56 1 2>;
             require-prior-idle-ms = <500>;
+            timeout-ms = <60>;
         };
 
         mouse_xfast {
             bindings = <&tog 7>;
-            key-positions = <55 0 1>;
-            timeout-ms = <300>;
+            key-positions = <56 0 1>;
             require-prior-idle-ms = <500>;
+            timeout-ms = <60>;
         };
     };
 
