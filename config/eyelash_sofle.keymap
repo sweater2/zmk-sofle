@@ -8,7 +8,22 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&mmv_input_listener { input-processors = <&zip_xy_scaler 1 1>; };
+&mmv_input_listener {
+    // 默认倍率：原配置是 1倍速
+    input-processors = <&zip_xy_scaler 1 1>;
+
+    // 档位3：极速 (当处于第7层时，3倍速)
+    gear_extreme {
+        layers = <7>;
+        input-processors = <&zip_xy_scaler 3 1>;
+    };
+
+    // 档位2：快速 (当处于第6层时，2倍速)
+    gear_fast {
+        layers = <6>;
+        input-processors = <&zip_xy_scaler 2 1>;
+    };
+};
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
@@ -19,7 +34,7 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <500>;
+    time-to-max-speed-ms = <120>;
     acceleration-exponent = <1>;
     trigger-period-ms = <2>; // 16
 };
@@ -42,42 +57,6 @@
     };
 
     behaviors {
-        mmv_slow: mmv_slow {
-            compatible = "zmk,behavior-input-two-axis";
-            label = "MMV_SLOW";
-            #binding-cells = <1>;
-            x-input-code = <INPUT_REL_X>;
-            y-input-code = <INPUT_REL_Y>;
-            // input-processors = <&zip_xy_scaler 1 1>; // 1x
-            time-to-max-speed-ms = <120>;
-            acceleration-exponent = <1>;
-            trigger-period-ms = <2>;
-        };
-
-        mmv_mid: mmv_mid {
-            compatible = "zmk,behavior-input-two-axis";
-            label = "MMV_MID";
-            #binding-cells = <1>;
-            x-input-code = <INPUT_REL_X>;
-            y-input-code = <INPUT_REL_Y>;
-            // input-processors = <&zip_xy_scaler 2 1>; // 2x
-            time-to-max-speed-ms = <100>;
-            acceleration-exponent = <1>;
-            trigger-period-ms = <2>;
-        };
-
-        mmv_fast: mmv_fast {
-            compatible = "zmk,behavior-input-two-axis";
-            #binding-cells = <1>;
-            label = "MMV_FAST";
-            x-input-code = <INPUT_REL_X>;
-            y-input-code = <INPUT_REL_Y>;
-            // input-processors = <&zip_xy_scaler 3 1>; // 3x
-            time-to-max-speed-ms = <80>;
-            acceleration-exponent = <1>;
-            trigger-period-ms = <2>;
-        };
-
         td_u_y: tap_dance_u_y {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -342,19 +321,29 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_mouse_palette {
+        layer_idle {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans   &trans                 &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans   &mmv_slow MOVE_UP      &trans  &mmv_mid MOVE_UP      &trans  &mmv_fast MOVE_UP     &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans   &mmv_slow MOVE_LEFT    &trans  &mmv_mid MOVE_LEFT    &trans  &mmv_fast MOVE_LEFT   &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans   &mmv_slow MOVE_DOWN    &trans  &mmv_mid MOVE_DOWN    &trans  &mmv_fast MOVE_DOWN   &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans   &mmv_slow MOVE_RIGHT   &trans  &mmv_mid MOVE_RIGHT   &trans  &mmv_fast MOVE_RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
-            display-name = "MOUSE_PALETTE";
         };
 
+        layer_mouse_fast {
+            display-name = "_GEAR_FAST";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
 
-        layer_idle {
+        layer_mouse_extreme {
+            display-name = "_GEAR_EXTREME";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
