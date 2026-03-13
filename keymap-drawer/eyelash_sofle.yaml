@@ -279,7 +279,7 @@ layers:
   - L
   - U
   - E
-  - T
+  - $$mdi:progress-download$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
