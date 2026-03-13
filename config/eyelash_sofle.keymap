@@ -19,7 +19,7 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <100>;
+    time-to-max-speed-ms = <500>;
     acceleration-exponent = <1>;
     trigger-period-ms = <2>; // 16
 };
@@ -48,7 +48,7 @@
             #binding-cells = <1>;
             x-input-code = <INPUT_REL_X>;
             y-input-code = <INPUT_REL_Y>;
-            input-processors = <&zip_xy_scaler 1 1>; // 1x
+            // input-processors = <&zip_xy_scaler 1 1>; // 1x
             time-to-max-speed-ms = <120>;
             acceleration-exponent = <1>;
             trigger-period-ms = <2>;
@@ -60,7 +60,7 @@
             #binding-cells = <1>;
             x-input-code = <INPUT_REL_X>;
             y-input-code = <INPUT_REL_Y>;
-            input-processors = <&zip_xy_scaler 2 1>; // 2x
+            // input-processors = <&zip_xy_scaler 2 1>; // 2x
             time-to-max-speed-ms = <100>;
             acceleration-exponent = <1>;
             trigger-period-ms = <2>;
@@ -72,7 +72,7 @@
             #binding-cells = <1>;
             x-input-code = <INPUT_REL_X>;
             y-input-code = <INPUT_REL_Y>;
-            input-processors = <&zip_xy_scaler 3 1>; // 3x
+            // input-processors = <&zip_xy_scaler 3 1>; // 3x
             time-to-max-speed-ms = <80>;
             acceleration-exponent = <1>;
             trigger-period-ms = <2>;
