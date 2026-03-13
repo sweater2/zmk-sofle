@@ -687,22 +687,20 @@ rect.held, rect.combo.held {
 <text x="756" y="88" class="combo tap">Y</text>
 </g>
 <g class="combo combopos-13">
-<path d="M179,125 l123,144" class="combo"/>
-<path d="M179,125 l-80,-58" class="combo"/>
-<path d="M179,125 l-32,-73" class="combo"/>
-<rect rx="6" ry="6" x="165" y="112" width="28" height="26" class="combo"/>
+<path d="M199,226 l99,49" class="combo"/>
+<path d="M199,226 l-99,-49" class="combo"/>
+<rect rx="6" ry="6" x="185" y="213" width="28" height="26" class="combo"/>
 <a href="#GEAR_FAST">
-<text x="179" y="125" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
-</a><text x="179" y="136" class="combo hold">toggle</text>
+<text x="199" y="226" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
+</a><text x="199" y="237" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-14">
-<path d="M142,132 l158,139" class="combo"/>
-<path d="M142,132 l-99,-65" class="combo"/>
-<path d="M142,132 l-47,-61" class="combo"/>
-<rect rx="6" ry="6" x="128" y="119" width="28" height="26" class="combo"/>
+<path d="M227,215 l73,57" class="combo"/>
+<path d="M227,215 l-73,-57" class="combo"/>
+<rect rx="6" ry="6" x="213" y="202" width="28" height="26" class="combo"/>
 <a href="#GEAR_EXTREME">
-<text x="142" y="132" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
-</a><text x="142" y="143" class="combo hold">toggle</text>
+<text x="227" y="215" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
+</a><text x="227" y="226" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1039,22 +1037,20 @@ rect.held, rect.combo.held {
 </a><text x="254" y="238" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
-<path d="M179,125 l123,144" class="combo"/>
-<path d="M179,125 l-80,-58" class="combo"/>
-<path d="M179,125 l-32,-73" class="combo"/>
-<rect rx="6" ry="6" x="165" y="112" width="28" height="26" class="combo"/>
+<path d="M199,226 l99,49" class="combo"/>
+<path d="M199,226 l-99,-49" class="combo"/>
+<rect rx="6" ry="6" x="185" y="213" width="28" height="26" class="combo"/>
 <a href="#GEAR_FAST">
-<text x="179" y="125" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
-</a><text x="179" y="136" class="combo hold">toggle</text>
+<text x="199" y="226" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
+</a><text x="199" y="237" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
-<path d="M142,132 l158,139" class="combo"/>
-<path d="M142,132 l-99,-65" class="combo"/>
-<path d="M142,132 l-47,-61" class="combo"/>
-<rect rx="6" ry="6" x="128" y="119" width="28" height="26" class="combo"/>
+<path d="M227,215 l73,57" class="combo"/>
+<path d="M227,215 l-73,-57" class="combo"/>
+<rect rx="6" ry="6" x="213" y="202" width="28" height="26" class="combo"/>
 <a href="#GEAR_EXTREME">
-<text x="142" y="132" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
-</a><text x="142" y="143" class="combo hold">toggle</text>
+<text x="227" y="215" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
+</a><text x="227" y="226" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1421,22 +1417,20 @@ rect.held, rect.combo.held {
 </a><text x="254" y="238" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-7">
-<path d="M179,125 l123,144" class="combo"/>
-<path d="M179,125 l-80,-58" class="combo"/>
-<path d="M179,125 l-32,-73" class="combo"/>
-<rect rx="6" ry="6" x="165" y="112" width="28" height="26" class="combo"/>
+<path d="M199,226 l99,49" class="combo"/>
+<path d="M199,226 l-99,-49" class="combo"/>
+<rect rx="6" ry="6" x="185" y="213" width="28" height="26" class="combo"/>
 <a href="#GEAR_FAST">
-<text x="179" y="125" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
-</a><text x="179" y="136" class="combo hold">toggle</text>
+<text x="199" y="226" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
+</a><text x="199" y="237" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-8">
-<path d="M142,132 l158,139" class="combo"/>
-<path d="M142,132 l-99,-65" class="combo"/>
-<path d="M142,132 l-47,-61" class="combo"/>
-<rect rx="6" ry="6" x="128" y="119" width="28" height="26" class="combo"/>
+<path d="M227,215 l73,57" class="combo"/>
+<path d="M227,215 l-73,-57" class="combo"/>
+<rect rx="6" ry="6" x="213" y="202" width="28" height="26" class="combo"/>
 <a href="#GEAR_EXTREME">
-<text x="142" y="132" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
-</a><text x="142" y="143" class="combo hold">toggle</text>
+<text x="227" y="215" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
+</a><text x="227" y="226" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1789,22 +1783,20 @@ rect.held, rect.combo.held {
 </a><text x="254" y="238" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
-<path d="M179,125 l123,144" class="combo"/>
-<path d="M179,125 l-80,-58" class="combo"/>
-<path d="M179,125 l-32,-73" class="combo"/>
-<rect rx="6" ry="6" x="165" y="112" width="28" height="26" class="combo"/>
+<path d="M199,226 l99,49" class="combo"/>
+<path d="M199,226 l-99,-49" class="combo"/>
+<rect rx="6" ry="6" x="185" y="213" width="28" height="26" class="combo"/>
 <a href="#GEAR_FAST">
-<text x="179" y="125" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
-</a><text x="179" y="136" class="combo hold">toggle</text>
+<text x="199" y="226" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
+</a><text x="199" y="237" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
-<path d="M142,132 l158,139" class="combo"/>
-<path d="M142,132 l-99,-65" class="combo"/>
-<path d="M142,132 l-47,-61" class="combo"/>
-<rect rx="6" ry="6" x="128" y="119" width="28" height="26" class="combo"/>
+<path d="M227,215 l73,57" class="combo"/>
+<path d="M227,215 l-73,-57" class="combo"/>
+<rect rx="6" ry="6" x="213" y="202" width="28" height="26" class="combo"/>
 <a href="#GEAR_EXTREME">
-<text x="142" y="132" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
-</a><text x="142" y="143" class="combo hold">toggle</text>
+<text x="227" y="215" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
+</a><text x="227" y="226" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2149,22 +2141,20 @@ rect.held, rect.combo.held {
 </a><text x="254" y="238" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
-<path d="M179,125 l123,144" class="combo"/>
-<path d="M179,125 l-80,-58" class="combo"/>
-<path d="M179,125 l-32,-73" class="combo"/>
-<rect rx="6" ry="6" x="165" y="112" width="28" height="26" class="combo"/>
+<path d="M199,226 l99,49" class="combo"/>
+<path d="M199,226 l-99,-49" class="combo"/>
+<rect rx="6" ry="6" x="185" y="213" width="28" height="26" class="combo"/>
 <a href="#GEAR_FAST">
-<text x="179" y="125" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
-</a><text x="179" y="136" class="combo hold">toggle</text>
+<text x="199" y="226" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
+</a><text x="199" y="237" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
-<path d="M142,132 l158,139" class="combo"/>
-<path d="M142,132 l-99,-65" class="combo"/>
-<path d="M142,132 l-47,-61" class="combo"/>
-<rect rx="6" ry="6" x="128" y="119" width="28" height="26" class="combo"/>
+<path d="M227,215 l73,57" class="combo"/>
+<path d="M227,215 l-73,-57" class="combo"/>
+<rect rx="6" ry="6" x="213" y="202" width="28" height="26" class="combo"/>
 <a href="#GEAR_EXTREME">
-<text x="142" y="132" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
-</a><text x="142" y="143" class="combo hold">toggle</text>
+<text x="227" y="215" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
+</a><text x="227" y="226" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2500,22 +2490,20 @@ rect.held, rect.combo.held {
 </a><text x="254" y="238" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
-<path d="M179,125 l123,144" class="combo"/>
-<path d="M179,125 l-80,-58" class="combo"/>
-<path d="M179,125 l-32,-73" class="combo"/>
-<rect rx="6" ry="6" x="165" y="112" width="28" height="26" class="combo"/>
+<path d="M199,226 l99,49" class="combo"/>
+<path d="M199,226 l-99,-49" class="combo"/>
+<rect rx="6" ry="6" x="185" y="213" width="28" height="26" class="combo"/>
 <a href="#GEAR_FAST">
-<text x="179" y="125" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
-</a><text x="179" y="136" class="combo hold">toggle</text>
+<text x="199" y="226" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
+</a><text x="199" y="237" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
-<path d="M142,132 l158,139" class="combo"/>
-<path d="M142,132 l-99,-65" class="combo"/>
-<path d="M142,132 l-47,-61" class="combo"/>
-<rect rx="6" ry="6" x="128" y="119" width="28" height="26" class="combo"/>
+<path d="M227,215 l73,57" class="combo"/>
+<path d="M227,215 l-73,-57" class="combo"/>
+<rect rx="6" ry="6" x="213" y="202" width="28" height="26" class="combo"/>
 <a href="#GEAR_EXTREME">
-<text x="142" y="132" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
-</a><text x="142" y="143" class="combo hold">toggle</text>
+<text x="227" y="215" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
+</a><text x="227" y="226" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2851,22 +2839,20 @@ rect.held, rect.combo.held {
 </a><text x="254" y="238" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
-<path d="M179,125 l123,144" class="combo"/>
-<path d="M179,125 l-80,-58" class="combo"/>
-<path d="M179,125 l-32,-73" class="combo"/>
-<rect rx="6" ry="6" x="165" y="112" width="28" height="26" class="combo"/>
+<path d="M199,226 l99,49" class="combo"/>
+<path d="M199,226 l-99,-49" class="combo"/>
+<rect rx="6" ry="6" x="185" y="213" width="28" height="26" class="combo"/>
 <a href="#GEAR_FAST">
-<text x="179" y="125" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
-</a><text x="179" y="136" class="combo hold">toggle</text>
+<text x="199" y="226" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
+</a><text x="199" y="237" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
-<path d="M142,132 l158,139" class="combo"/>
-<path d="M142,132 l-99,-65" class="combo"/>
-<path d="M142,132 l-47,-61" class="combo"/>
-<rect rx="6" ry="6" x="128" y="119" width="28" height="26" class="combo"/>
+<path d="M227,215 l73,57" class="combo"/>
+<path d="M227,215 l-73,-57" class="combo"/>
+<rect rx="6" ry="6" x="213" y="202" width="28" height="26" class="combo"/>
 <a href="#GEAR_EXTREME">
-<text x="142" y="132" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
-</a><text x="142" y="143" class="combo hold">toggle</text>
+<text x="227" y="215" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
+</a><text x="227" y="226" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -3202,22 +3188,20 @@ rect.held, rect.combo.held {
 </a><text x="254" y="238" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
-<path d="M179,125 l123,144" class="combo"/>
-<path d="M179,125 l-80,-58" class="combo"/>
-<path d="M179,125 l-32,-73" class="combo"/>
-<rect rx="6" ry="6" x="165" y="112" width="28" height="26" class="combo"/>
+<path d="M199,226 l99,49" class="combo"/>
+<path d="M199,226 l-99,-49" class="combo"/>
+<rect rx="6" ry="6" x="185" y="213" width="28" height="26" class="combo"/>
 <a href="#GEAR_FAST">
-<text x="179" y="125" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
-</a><text x="179" y="136" class="combo hold">toggle</text>
+<text x="199" y="226" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_FAST</tspan></text>
+</a><text x="199" y="237" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
-<path d="M142,132 l158,139" class="combo"/>
-<path d="M142,132 l-99,-65" class="combo"/>
-<path d="M142,132 l-47,-61" class="combo"/>
-<rect rx="6" ry="6" x="128" y="119" width="28" height="26" class="combo"/>
+<path d="M227,215 l73,57" class="combo"/>
+<path d="M227,215 l-73,-57" class="combo"/>
+<rect rx="6" ry="6" x="213" y="202" width="28" height="26" class="combo"/>
 <a href="#GEAR_EXTREME">
-<text x="142" y="132" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
-</a><text x="142" y="143" class="combo hold">toggle</text>
+<text x="227" y="215" class="combo tap layer-activator"><tspan style="font-size: 60%">_GEAR_EXT…</tspan></text>
+</a><text x="227" y="226" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
