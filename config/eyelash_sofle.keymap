@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 300  // 600, 1200
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600, 1200
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20   // 10, 25
 
 #include <input/processors.dtsi>
@@ -8,25 +8,25 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&mmv_input_listener {
+//&mmv_input_listener {
     // 默认倍率：原配置是 1倍速
 
-    input-processors = <&zip_xy_scaler 4 1>;
+    //input-processors = <&zip_xy_scaler 1 1>;
 
     // 档位3：极速 (当处于第7层时，2倍速)
 
-    gear_extreme {
-        layers = <7>;
-        input-processors = <&zip_xy_scaler 6 1>;
-    };
+    //gear_extreme {
+    //    layers = <7>;
+    //    input-processors = <&zip_xy_scaler 6 1>;
+    //};
 
     // 档位2：快速 (当处于第6层时，1.5倍速)
 
-    gear_fast {
-        layers = <6>;
-        input-processors = <&zip_xy_scaler 5 1>;
-    };
-};
+    //gear_fast {
+    //    layers = <6>;
+    //    input-processors = <&zip_xy_scaler 5 1>;
+    //};
+//};
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 1 1>; };
 
@@ -352,7 +352,7 @@
         layer_bt {
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &none  &none  &none  &none  &none  &none
-&kp CAPS    &kp B         &kp L         &kp U         &kp E         &bootloader     &mmv MOVE_DOWN   &none  &none  &none  &none  &none  &none
+&kp CAPS    &kp B         &kp L         &kp U         &kp E         &kp T           &mmv MOVE_DOWN   &none  &none  &none  &none  &none  &none
 &none       &none         &none         &none         &none         &none           &mmv MOVE_LEFT   &none  &none  &none  &none  &none  &none
 &none       &none         &none         &none         &none         &none           &mmv MOVE_RIGHT  &none  &none  &none  &none  &none  &none
 &none       &none         &none         &none         &none         &soft_off       &mkp LCLK        &none  &none  &none  &none  &none
@@ -375,8 +375,8 @@
         layer_mouse_fast {
             display-name = "_GEAR_FAST";
             bindings = <
-&trans  &trans                  &mmv_acc0 MOVE_UP       &trans                  &trans                  &trans                   &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mmv_acc0 MOVE_LEFT     &mmv_acc0 MOVE_DOWN     &mmv_acc0 MOVE_RIGHT    &mmv_acc2 MOVE_Y(600)   &trans                   &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &mmv_acc0 MOVE_Y(600)   &trans                  &trans                  &trans                   &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mmv_acc0 MOVE_X(-600)  &mmv_acc0 MOVE_Y(-600)  &mmv_acc0 MOVE_X(600)   &mmv_acc2 MOVE_Y(600)   &trans                   &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans                  &mmv_acc1 MOVE_Y(600)   &mmv_acc2 MOVE_X(-600)  &mmv_acc2 MOVE_Y(-600)  &mmv_acc2 MOVE_X(600)    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &mmv_acc1 MOVE_X(-600)  &mmv_acc1 MOVE_Y(-600)  &mmv_acc1 MOVE_X(600)   &trans                  &trans                   &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans                  &trans                  &trans                  &trans                  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
