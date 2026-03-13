@@ -13,18 +13,18 @@
 
     input-processors = <&zip_xy_scaler 1 1>;
 
-    // 档位3：极速 (当处于第7层时，3倍速)
+    // 档位3：极速 (当处于第7层时，2倍速)
 
     gear_extreme {
         layers = <7>;
-        input-processors = <&zip_xy_scaler 3 1>;
+        input-processors = <&zip_xy_scaler 2 1>;
     };
 
-    // 档位2：快速 (当处于第6层时，2倍速)
+    // 档位2：快速 (当处于第6层时，1.5倍速)
 
     gear_fast {
         layers = <6>;
-        input-processors = <&zip_xy_scaler 2 1>;
+        input-processors = <&zip_xy_scaler 1.5 1>;
     };
 };
 
@@ -32,8 +32,9 @@
 
 &msc {
     acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <5>;       // 300
+    time-to-max-speed-ms = <50>;       // 5, 300
     delay-ms = <0>;                   // 0
+    trigger-period-ms = <2>;
 };
 
 &mmv {
