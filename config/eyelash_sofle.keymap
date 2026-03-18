@@ -42,7 +42,7 @@
 
 &mt { flavor = "balanced"; };
 
-&lt { tapping-term-ms = <100>; };
+&lt { tapping-term-ms = <160>; };  // default 200
 
 / {
     scroll_encoder: scroll_encoder {
